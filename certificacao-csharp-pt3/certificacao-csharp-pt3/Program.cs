@@ -83,7 +83,12 @@ namespace Topico1
             Console.WriteLine(this.Saldo);
         }
 
-        public int Saldo { get; set; }
+        void Sacar(decimal saque)
+        {
+            Saldo = Saldo - saque;
+        }
+
+        public decimal Saldo { get; set; }
     }
 
     public class ContaCorrente : Conta
