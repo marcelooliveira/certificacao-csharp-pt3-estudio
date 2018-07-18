@@ -85,7 +85,10 @@ namespace Topico1
 
     public class ContaCorrente : Conta
     {
+        public ContaCorrente()
+        {
 
+        }
     }
 }
 
