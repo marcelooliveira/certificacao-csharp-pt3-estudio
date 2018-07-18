@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Topico1.Propriedades e Aces
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topico2.Projetar Interface", "Topico2.Projetar Interface\Topico2.Projetar Interface.csproj", "{11DB299A-8FB4-460A-AA64-4CC0B25ECD9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teste", "teste\teste.csproj", "{EDE93A9E-7984-4866-A40E-2DFE4F5BCA1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +19,17 @@ Global
 		{5BC66415-1479-4612-91EA-C4901D210CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BC66415-1479-4612-91EA-C4901D210CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BC66415-1479-4612-91EA-C4901D210CA7}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{11DB299A-8FB4-460A-AA64-4CC0B25ECD9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{11DB299A-8FB4-460A-AA64-4CC0B25ECD9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11DB299A-8FB4-460A-AA64-4CC0B25ECD9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11DB299A-8FB4-460A-AA64-4CC0B25ECD9D}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{EDE93A9E-7984-4866-A40E-2DFE4F5BCA1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDE93A9E-7984-4866-A40E-2DFE4F5BCA1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDE93A9E-7984-4866-A40E-2DFE4F5BCA1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDE93A9E-7984-4866-A40E-2DFE4F5BCA1A}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 1921ef625c8d3c2de881a13648b958b1ea2daaa0
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
