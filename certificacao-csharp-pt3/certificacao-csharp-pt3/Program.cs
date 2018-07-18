@@ -65,17 +65,21 @@ namespace Topico1
         //public decimal Salario { get; set; }
     }
 
-    public class Cliente
+    public class Banco
     {
-        public Cliente()
+        public Banco()
         {
-
         }
     }
 
-    public class Servidor
+    public class Conta
     {
-        
+        public Conta()
+        {
+            
+        }
+
+        public int Saldo { get; set; }
     }
 }
 
