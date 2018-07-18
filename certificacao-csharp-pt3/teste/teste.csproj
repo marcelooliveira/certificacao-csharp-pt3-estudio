@@ -5,4 +5,8 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\certificacao-csharp-pt3\Topico1.Propriedades e Acessadores.csproj" />
+  </ItemGroup>
+
 </Project>

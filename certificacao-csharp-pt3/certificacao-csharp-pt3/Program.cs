@@ -69,7 +69,9 @@ namespace Topico1
     {
         public Banco()
         {
-
+            Conta conta = new Conta();
+            conta.Saldo = 1000;
+            Console.WriteLine(conta.Saldo);
         }
     }
 
@@ -77,7 +79,8 @@ namespace Topico1
     {
         public Conta()
         {
-            
+            this.Saldo = 1000;
+            Console.WriteLine(this.Saldo);
         }
 
         public int Saldo { get; set; }
@@ -87,7 +90,8 @@ namespace Topico1
     {
         public ContaCorrente()
         {
-
+            this.Saldo = 1000;
+            Console.WriteLine(this.Saldo);
         }
     }
 }
