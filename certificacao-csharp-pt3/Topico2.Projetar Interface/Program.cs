@@ -10,10 +10,10 @@ namespace Topico2
     {
         static void Main(string[] args)
         {
-            Televisao televisao = new Televisao();
-            Abajur abajur = new Abajur();
-            Lanterna lanterna = new Lanterna();
-            Radio radio = new Radio();
+            Televisao eletro1 = new Televisao();
+            Abajur eletro2 = new Abajur();
+            Lanterna eletro3 = new Lanterna();
+            Radio eletro4 = new Radio();
         }
     }
 
