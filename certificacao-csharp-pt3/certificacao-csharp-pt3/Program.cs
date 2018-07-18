@@ -69,6 +69,7 @@ namespace Topico1
     {
         public Banco()
         {
+
         }
     }
 
@@ -80,6 +81,11 @@ namespace Topico1
         }
 
         public int Saldo { get; set; }
+    }
+
+    public class ContaCorrente : Conta
+    {
+
     }
 }
 
