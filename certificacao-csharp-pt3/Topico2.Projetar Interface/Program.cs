@@ -36,7 +36,12 @@ namespace Topico2
         double PotenciaDaLampada { get; set; }
     }
 
-    class Televisao : IEletrodomestico
+    interface IRadioReceptor
+    {
+        double Frequencia { get; set; }
+    }
+
+    class Televisao : IEletrodomestico, IRadioReceptor
     {
         public event EventHandler Ligou;
         public event EventHandler Desligou;
@@ -88,7 +93,7 @@ namespace Topico2
         }
     }
 
-    class Radio : IEletrodomestico
+    class Radio : IEletrodomestico, IRadioReceptor
     {
         public event EventHandler Ligou;
         public event EventHandler Desligou;
