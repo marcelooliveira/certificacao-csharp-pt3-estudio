@@ -64,6 +64,19 @@ namespace Topico1
 
         //public decimal Salario { get; set; }
     }
+
+    public class Cliente
+    {
+        public Cliente()
+        {
+
+        }
+    }
+
+    public class Servidor
+    {
+        
+    }
 }
 
 
