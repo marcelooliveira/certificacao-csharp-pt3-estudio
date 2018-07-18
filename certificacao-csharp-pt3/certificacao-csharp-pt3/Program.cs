@@ -88,7 +88,7 @@ namespace Topico1
             Saldo = Saldo - saque;
         }
 
-        private decimal Saldo { get; set; }
+        public decimal Saldo { get; set; }
     }
 
     public class ContaCorrente : Conta
