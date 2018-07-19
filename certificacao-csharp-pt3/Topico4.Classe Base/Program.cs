@@ -36,6 +36,13 @@ namespace Topico4
 
             Console.WriteLine();
             Console.WriteLine(cliente);
+
+            //Pessoa pessoa = new Pessoa
+            //{
+            //    CPF = "789.456.123-99",
+            //    Nome = "Maria de Souza",
+            //    DataNascimento = new DateTime(1995, 1, 1)
+            //};
         }
     }
 
@@ -61,12 +68,8 @@ namespace Topico4
         int CargaHorariaMensal { get; set; }
     }
 
-    class Funcionario : IFuncionario, IPlantonista
+    class Funcionario : Pessoa, IFuncionario, IPlantonista
     {
-        public string CPF { get; set; }
-        public string Nome { get; set; }
-        public DateTime DataNascimento { get; set; }
-
         public event EventHandler CrachaGerado;
 
         void IFuncionario.GerarCracha()
@@ -101,11 +104,8 @@ namespace Topico4
         }
     }
 
-    class Cliente
+    sealed class Cliente : Pessoa
     {
-        public string CPF { get; set; }
-        public string Nome { get; set; }
-        public DateTime DataNascimento { get; set; }
         public DateTime UltimaCompra { get; set; }
         public decimal ValorUltimaCompra { get; set; }
 
@@ -113,6 +113,18 @@ namespace Topico4
         {
             return $"Nome: {Nome} - Última compra: {UltimaCompra:dd/MM/yyyy}";
         }
+    }
+
+    //class ClienteEspecial : Cliente
+    //{
+
+    //}
+
+    abstract class Pessoa
+    {
+        public string CPF { get; set; }
+        public string Nome { get; set; }
+        public DateTime DataNascimento { get; set; }
     }
 }
 
