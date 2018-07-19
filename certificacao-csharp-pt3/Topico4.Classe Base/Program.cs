@@ -33,6 +33,9 @@ namespace Topico4
                 UltimaCompra = new DateTime(2018,2,3),
                 ValorUltimaCompra = 1000
             };
+
+            Console.WriteLine();
+            Console.WriteLine(cliente);
         }
     }
 
@@ -105,6 +108,11 @@ namespace Topico4
         public DateTime DataNascimento { get; set; }
         public DateTime UltimaCompra { get; set; }
         public decimal ValorUltimaCompra { get; set; }
+
+        public override string ToString()
+        {
+            return $"Nome: {Nome} - Última compra: {UltimaCompra:dd/MM/yyyy}";
+        }
     }
 }
 
