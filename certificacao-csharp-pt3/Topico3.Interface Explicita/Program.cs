@@ -10,7 +10,9 @@ namespace Topico3.Interface_Explicita
     {
         static void Main(string[] args)
         {
-/// <image url="$(ProjectDir)\Cracha.png" />
+            /// <image url="$(ProjectDir)\Cracha.png" />
+            /// <image url="$(ProjectDir)\Cracha2.png" />
+
             Funcionario funcionario = new Funcionario(1500);
             funcionario.CPF = "123.456.789-00";
             funcionario.Nome = "josé da silva";
