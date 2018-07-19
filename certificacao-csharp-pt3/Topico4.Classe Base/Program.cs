@@ -24,6 +24,15 @@ namespace Topico4
             };
             ((IFuncionario)funcionario).GerarCracha();
             ((IPlantonista)funcionario).GerarCracha();
+
+            Cliente cliente = new Cliente
+            {
+                CPF = "789.456.123-99",
+                Nome = "Maria de Souza",
+                DataNascimento = new DateTime(1995,1,1),
+                UltimaCompra = new DateTime(2018,2,3),
+                ValorUltimaCompra = 1000
+            };
         }
     }
 
@@ -87,6 +96,15 @@ namespace Topico4
         {
             Console.WriteLine("Pagamento Efetuado");
         }
+    }
+
+    class Cliente
+    {
+        public string CPF { get; set; }
+        public string Nome { get; set; }
+        public DateTime DataNascimento { get; set; }
+        public DateTime UltimaCompra { get; set; }
+        public decimal ValorUltimaCompra { get; set; }
     }
 }
 
