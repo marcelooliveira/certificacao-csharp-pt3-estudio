@@ -24,25 +24,6 @@ namespace Topico4
             };
             ((IFuncionario)funcionario).GerarCracha();
             ((IPlantonista)funcionario).GerarCracha();
-
-            Cliente cliente = new Cliente
-            {
-                CPF = "789.456.123-99",
-                Nome = "Maria de Souza",
-                DataNascimento = new DateTime(1995,1,1),
-                UltimaCompra = new DateTime(2018,2,3),
-                ValorUltimaCompra = 1000
-            };
-
-            Console.WriteLine();
-            Console.WriteLine(cliente);
-
-            //Pessoa pessoa = new Pessoa
-            //{
-            //    CPF = "789.456.123-99",
-            //    Nome = "Maria de Souza",
-            //    DataNascimento = new DateTime(1995, 1, 1)
-            //};
         }
     }
 
@@ -64,12 +45,16 @@ namespace Topico4
 
     interface IPlantonista
     {
-        void GerarCracha();
         int CargaHorariaMensal { get; set; }
+        void GerarCracha();
     }
 
-    class Funcionario : Pessoa, IFuncionario, IPlantonista
+    class Funcionario : IFuncionario, IPlantonista
     {
+        public string CPF { get; set; }
+        public string Nome { get; set; }
+        public DateTime DataNascimento { get; set; }
+
         public event EventHandler CrachaGerado;
 
         void IFuncionario.GerarCracha()
@@ -91,6 +76,7 @@ namespace Topico4
         public decimal Salario { get; }
 
         int IFuncionario.CargaHorariaMensal { get; set; }
+
         int IPlantonista.CargaHorariaMensal { get; set; }
 
         public Funcionario(decimal salario)
@@ -102,29 +88,6 @@ namespace Topico4
         {
             Console.WriteLine("Pagamento Efetuado");
         }
-    }
-
-    sealed class Cliente : Pessoa
-    {
-        public DateTime UltimaCompra { get; set; }
-        public decimal ValorUltimaCompra { get; set; }
-
-        public override string ToString()
-        {
-            return $"Nome: {Nome} - Última compra: {UltimaCompra:dd/MM/yyyy}";
-        }
-    }
-
-    //class ClienteEspecial : Cliente
-    //{
-
-    //}
-
-    abstract class Pessoa
-    {
-        public string CPF { get; set; }
-        public string Nome { get; set; }
-        public DateTime DataNascimento { get; set; }
     }
 }
 
